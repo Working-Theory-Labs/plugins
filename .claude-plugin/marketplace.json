@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "working-theory",
+  "metadata": {
+    "description": "Positionary: a brand's words, site, look, promotion and studies, worked from the record held in its site's Admin."
+  },
+  "owner": {
+    "name": "SalesSmyth"
+  },
+  "plugins": [
+    {
+      "name": "positionary",
+      "description": "Positionary: a brand's words, site, look, promotion and studies, worked from the record held in its site's Admin.",
+      "version": "0.3.15",
+      "author": {
+        "name": "SalesSmyth"
+      },
+      "source": "./positionary",
+      "category": "writing",
+      "tags": [
+        "positioning",
+        "messaging",
+        "copywriting",
+        "voice",
+        "site",
+        "design",
+        "promotion",
+        "study",
+        "skills"
+      ]
+    }
+  ]
+}
