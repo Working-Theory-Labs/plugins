@@ -30,7 +30,8 @@ Never suggest a command that is not built: when fewer than two built commands fi
 `/positionary venue [name the venue, such as Reddit or Upwork]`
 `/positionary outline [the piece to plan]`
 `/positionary write [describe what you want to write]`
-`/positionary feedback [what]`
+`/positionary review [what]`
+`/positionary image [name the placeholder to replace]`
 `/positionary scan` find openings worth your time today
 `/positionary check` find where your brand contradicts itself
 `/positionary foundations` see what your workspace is missing
@@ -80,7 +81,7 @@ Run nothing until the writer picks.
 | Take a page or an item off the site | `disable` (not built yet) |
 | Plan what a piece will say before writing it | `outline` |
 | Write a new piece | `write` |
-| Know whether a draft's words are working | `feedback` |
+| Know whether a draft's words are working | `review` |
 | Bring a draft that wanders back to its point | `refocus` (not built yet) |
 | Reorder a draft so its argument flows | `restructure` (not built yet) |
 | Back up the claims in a draft | `support` (not built yet) |
@@ -93,9 +94,9 @@ Run nothing until the writer picks.
 | Settle the look | `choose` (not built yet) |
 | Lay out a page: which sections it has and where each goes | `structure` (not built yet) |
 | Set the site's colours, type and spacing | `theme` (not built yet) |
-| Swap a placeholder for a real image | `image` (not built yet) |
+| Swap a placeholder for a real image | `image` |
 | Add motion | `motion` (not built yet) |
-| Know whether a page breaks a design rule | `inspect` (not built yet) |
+| Know whether a page breaks a design rule | `audit` (not built yet) |
 | Know whether a page's design is working | `critique` (not built yet) |
 | Know what to do today to promote the brand | `today` (not built yet) |
 | Decide when and where content goes out | `schedule` (not built yet) |
@@ -115,6 +116,7 @@ Run nothing until the writer picks.
 | Know whether the workspace is consistent | `check` |
 | Know what the workspace is missing | `foundations` |
 | Write the brand's documents from pages that already exist | `document` (not built yet) |
+| Tell the people who make this skill what is or is not working | `feedback` (not built yet) |
 
 When the command is not built yet, say so and offer the nearest built one.
 

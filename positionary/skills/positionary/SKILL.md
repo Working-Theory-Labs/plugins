@@ -1,9 +1,9 @@
 ---
 name: positionary
 description: "Load this skill before you reply to any request about a brand's words, its site, its look, its promotion or a business question it must answer, and say nothing first. Use to define a brand's positioning (POSITIONING.md), messaging (MESSAGING.md), voice (VOICE.md) and language primitives, then plan, write, edit or tighten its words; to set up the brand's site, add pages, forms and sign-ins, check it is ready, take it live and keep it healthy; to give the site its look from a reference or an art direction, lay out each page, set the theme and judge the result; to put the brand's content in front of the right people: where to take part, the day's list, what goes out and the openings worth answering; and to study one business question: where it stands, a hypothesis, the options and the decision. It works on: pages, posts, magnets, press releases, pitches, proposals, profiles, sites, page layouts, themes, imagery, content schedules, openings, rationales and decisions, saved as drafts in the brand's workspace."
-version: 0.3.15
+version: 0.3.17
 user-invocable: true
-argument-hint: "[init|provision|positioning|messaging|voice|language|plan|venue · new|attach · ready|go-live · health|update|upgrade|disable · outline|write · feedback|refocus|restructure|support|revoice|tighten · final-check|title · extract|explore|choose · structure · theme · image|motion · inspect|critique · today · schedule|newsletter · threads · scan · brief|record · assess|frame|hypothesize · research · options|decide|present|route] [what to work on]"
+argument-hint: "[init|provision|positioning|messaging|voice|language|plan|venue · new|attach · ready|go-live · health|update|upgrade|disable · outline|write · review|refocus|restructure|support|revoice|tighten · final-check|title · extract|explore|choose · structure · theme · image|motion · audit|critique · today · schedule|newsletter · threads · scan · brief|record · assess|frame|hypothesize · research · options|decide|present|route] [what to work on]"
 ---
 
 This skill gives you the method and the permission to write what sets a brand apart from its alternatives and draws its best-fit buyers into a relationship with it. Every page, post and magnet should make the brand more attractive to those buyers, and worth more as a result. Work as a senior brand strategist and copywriter would: a position worth defending, one reader in mind, claims the brand can back, and sentences a person would say out loud. The same record serves the brand's site, its look, its promotion and the business questions it has to answer; each is a pack of commands below.
@@ -71,19 +71,19 @@ With no craft, never run a command from memory, from its line in the Commands ta
 
 ## Commands
 
-Commands are grouped by where the writer is in the work. **Prepare** acts on the workspace, **Build** adds what the site needs, **Launch** takes the site live, **Run** keeps a live site healthy, **Draft** takes a piece to a first full version, **Edit** improves a draft one concern at a time, **Finalize** makes it ready to hand over, **Direction** settles the art direction, **Compose** lays out one page at a time, **Codify** turns the direction into settings, **Enrich** swaps each placeholder for the real asset once the site is built, **Review** judges the result, **Daily** turns everything below into one list for the day, **Calendar** decides when and where planned content goes out, **Engage** joins the conversations already happening, **Signal** finds what was not planned, **Respond** gets an answer written, approved and placed, **Question** defines the problem before any analysis, **Test** tests the hypothesis through analysis and **Answer** delivers the proven or revised answer and carries it out. The word after a command is what to work on: anything in the table at the end of this file, or a subject.
+Commands are grouped by where the writer is in the work. **Prepare** acts on the workspace, **Build** adds what the site needs, **Launch** takes the site live, **Run** keeps a live site healthy, **Draft** takes a piece to a first full version, **Edit** improves a draft one concern at a time, **Finalize** makes it ready to hand over, **Direction** settles the art direction, **Compose** lays out one page at a time, **Codify** turns the direction into settings, **Enrich** swaps each placeholder for the real asset once the site is built, **Evaluate** judges the result, **Daily** turns everything below into one list for the day, **Calendar** decides when and where planned content goes out, **Engage** joins the conversations already happening, **Signal** finds what was not planned, **Respond** gets an answer written, approved and placed, **Question** defines the problem before any analysis, **Test** tests the hypothesis through analysis and **Answer** delivers the proven or revised answer and carries it out. The word after a command is what to work on: anything in the table at the end of this file, or a subject.
 
-Packs: Site (`growth-ops`), Writing (`positionary`), Design (`design-shop`), Promotion (`promote`), Study (`study`). Each command belongs to one pack, or is `shared` by every pack. A pack is what a workspace is granted, by its id; a command name is used once, across every pack.
+Packs: Site (`growth-ops`), Messaging (`messaging`), Writing (`positionary`), Design (`design-shop`), Promotion (`promote`), Study (`study`). Each command belongs to one pack, or is `shared` by every pack. A pack is what a workspace is granted, by its id; a command name is used once, across every pack.
 
 | Command | Pack | Kind | What it does | Reference |
 |---|---|---|---|---|
 | `init` | shared | Prepare | Pick a workspace; confirm its site name and description; find its locale | served by the Admin |
 | `provision [name the site to set up]` | Site | Prepare | Set up a site's repository, hosting, database and domain from a plan approved first | Not built yet |
-| `positioning` | Writing | Prepare | Define what the brand is, who it is for and why it wins, as `POSITIONING.md` | Not built yet |
-| `messaging [reader]` | Writing | Prepare | Define what one reader hears, as a `MESSAGING.md` for that reader | Not built yet |
-| `voice` | Writing | Prepare | Offer one paragraph two ways; record the writer's pick as `VOICE.md` | served by the Admin |
-| `language` | Writing | Prepare | Define the brand's language primitives: terms, topics with their keywords, FAQs and proof | Not built yet |
-| `plan [what]` | Writing | Prepare | Plan the site's pages in `SITE.md`, or the pieces to write next in `CONTENT.md` | Not built yet |
+| `positioning` | Study | Prepare | Define what the brand is, who it is for and why it wins, as `POSITIONING.md` | Not built yet |
+| `messaging [reader]` | Messaging | Prepare | Define what one reader hears, as a `MESSAGING.md` for that reader | Not built yet |
+| `voice` | Messaging | Prepare | Offer one paragraph two ways; record the writer's pick as `VOICE.md` | served by the Admin |
+| `language` | Messaging | Prepare | Define the brand's language primitives: terms, topics with their keywords, FAQs and proof | Not built yet |
+| `plan [what]` | Messaging | Prepare | Plan the site's pages in `SITE.md`, or the pieces to write next in `CONTENT.md` | Not built yet |
 | `venue [name the venue, such as Reddit or Upwork]` | Promotion | Prepare | Set up a venue's settings: what to look for, what fits, its rules and the owner's daily time | served by the Admin |
 | `new [name the page to add]` | Site | Build | Create a page from its page type, with placeholder sections, as a draft | Not built yet |
 | `attach [say what to connect, and to which page]` | Site | Build | Connect a form, magnet, sign-in or listing to a page, inside the Admin | Not built yet |
@@ -95,7 +95,7 @@ Packs: Site (`growth-ops`), Writing (`positionary`), Design (`design-shop`), Pro
 | `disable [name the page or item to turn off]` | Site | Run | Turn off a live page or library item, with the publish permission and a yes | Not built yet |
 | `outline [the piece to plan]` | Writing | Draft | Offer two or three main points, stop for a pick, then show the piece's argument on one board | served by the Admin |
 | `write [describe what you want to write]` | Writing | Draft | Choose what to write; write it in the workspace's voice; save it as a hub draft; read it back | served by the Admin |
-| `feedback [what]` | Writing | Edit | Read a draft as its reader would and say what works and what does not; changes nothing | served by the Admin |
+| `review [what]` | Writing | Edit | Read a draft as its reader would and say what works and what does not; changes nothing | served by the Admin |
 | `refocus [what]` | Writing | Edit | Bring a draft back to its one main point | Not built yet |
 | `restructure [what]` | Writing | Edit | Reorder a draft so the reasoning lands | Not built yet |
 | `support [what]` | Writing | Edit | Back each claim with the workspace's proof, and name the claims that have none | Not built yet |
@@ -108,10 +108,10 @@ Packs: Site (`growth-ops`), Writing (`positionary`), Design (`design-shop`), Pro
 | `choose` | Design | Direction | Record the art direction, the approach to imagery, and what was turned down and why | Not built yet |
 | `structure [name the page to lay out]` | Design | Compose | Lay out a page from the site's sections, with a placeholder for each asset to come | Not built yet |
 | `theme` | Design | Codify | Set the art direction as the site's theme, layout options and section presets | Not built yet |
-| `image [name the placeholder to replace]` | Design | Enrich | Replace one placeholder with a supplied or generated image, with a yes for that image | Not built yet |
+| `image [name the placeholder to replace]` | Design | Enrich | Replace one placeholder with a supplied or generated image, with a yes for that image | served by the Admin |
 | `motion [name the page]` | Design | Enrich | Add motion to a page within the site's design | Not built yet |
-| `inspect [name the page to inspect]` | Design | Review | Run the rule-based pass: accessibility, the page against the theme, and the design guide's rules | Not built yet |
-| `critique [name the page to judge]` | Design | Review | Judge a page's render at phone and desktop widths against the art direction; changes nothing | Not built yet |
+| `audit [name the page to audit]` | Design | Evaluate | Run the rule-based pass: accessibility, the page against the theme, and the design guide's rules | Not built yet |
+| `critique [name the page to judge]` | Design | Evaluate | Judge a page's render at phone and desktop widths against the art direction; changes nothing | Not built yet |
 | `today [say how much time you have]` | Promotion | Daily | Build today's list to fit the owner's time, and work through it | Not built yet |
 | `schedule [name the piece, or leave out for the whole plan]` | Promotion | Calendar | Set when and where each planned piece goes out, and the short pieces cut from it | Not built yet |
 | `newsletter` | Promotion | Calendar | Plan the next issue from what was published | Not built yet |
@@ -129,7 +129,7 @@ Packs: Site (`growth-ops`), Writing (`positionary`), Design (`design-shop`), Pro
 | `route [name the resolution]` | Study | Answer | List which documents the resolution changes and hand each to the command that owns it | Not built yet |
 
 Other names: `connect` for `init`.
-Utilities: `help`, `check`, `foundations`, `document`. They act on the skill or the whole workspace and are described under Routing.
+Utilities: `help`, `check`, `foundations`, `document`, `feedback`. They act on the skill or the whole workspace and are described under Routing.
 
 Claude Code only: `provision`, `update`. They need a site's repository and a shell. Anywhere else, say the command needs Claude Code, say how to open the site's repository there, and stop.
 
@@ -143,9 +143,10 @@ Claude Code only: `provision`, `update`. They need a site's repository and a she
 - **Writing work that no command covers:** route it to `write`, and get its craft. A narrow edit to an existing piece goes ahead on what exists; offer to fill the gap afterwards, and do not block on it.
 - **A piece's argument,** when building or checking one: route it to `outline`, and get its craft.
 - **A command that is not built yet:** open with the first line as for any command, then say it is not built. Offer the nearest built one. Do not improvise it, and do not offer to do its work another way, such as with the Admin's tools directly.
-- **`feedback`:** on a named piece, it judges that piece. With no piece named, `/positionary feedback` judges the whole workspace. Get its craft and follow it.
+- **`review`:** it judges one piece, or the whole workspace when the writer asks for that. With nothing named, it takes the piece this conversation is working on; when there is none, or more than one, it asks which before it reads anything. Get its craft and follow it.
+- **`feedback`:** `/positionary feedback` sends the people who make this skill the writer's feedback about it: a quick rating and a note, at any time. The same short question may also be asked of the writer when something went wrong, when they seem frustrated, or as a check-in. It is in every pack. It is not built yet: say so in one line, and when the writer wanted a draft or the workspace judged, offer `review`. Do not run `review` in its place. Until 2026-11-21 `feedback` was the name of `review`.
 - **`check`:** `/positionary check` reports where the workspace is inconsistent with itself. Get its craft and follow it.
-- **`document`:** `/positionary document` writes the packs' contract documents from the workspace's finished state: `POSITIONING.md`, `MESSAGING.md` and `VOICE.md` for Writing, from finished pages in a workspace that has pages and no documents; `SITE.md` for Site; `DESIGN.md` and `PRODUCT.md` for Design; and a venue's playbook for Promotion. Not built yet: say so, and say which of those documents the workspace already holds.
+- **`document`:** `/positionary document` writes the packs' contract documents from the workspace's finished state: `POSITIONING.md` for Study, and `MESSAGING.md` and `VOICE.md` for Messaging, from finished pages in a workspace that has pages and no documents; `SITE.md` for Site; `DESIGN.md` and `PRODUCT.md` for Design; and a venue's playbook for Promotion. Not built yet: say so, and say which of those documents the workspace already holds.
 - **`foundations`:** `/positionary foundations` shows what a workspace should have and what is missing. `/positionary foundations <item>` fills that one. Get its craft and follow it.
 
 Never fix a workspace problem as a side effect of a piece. Report it, and fix it only when asked.
@@ -172,7 +173,7 @@ This table and the Commands table are the authority. The description, the README
 | Live state | Whether a page or a library item is live, in the Admin. Changed only with the publish permission and a yes | Not yet | No |
 | Page layouts | The page's draft in the workspace: its sections, their order and their options. The words are not touched | Not yet | Yes |
 | Themes | The workspace's theme: colours, type and spacing | Not yet | Yes |
-| Imagery | The site's files. Generated only with the customer's approval on each image | Not yet | Yes |
+| Imagery | The site's files. Generated only with the customer's approval on each image | `image` | Yes |
 | Motion | Not decided | Not yet | No |
 | Custom-work requests | One document per request in the workspace, with an Inbox item pointing to it. The Inbox item waits on the Admin | Not yet | No |
 | Design guide | `DESIGN.md`: a Knowledge document, written from the finished site | Not yet | No |
@@ -188,7 +189,7 @@ This table and the Commands table are the authority. The description, the README
 | Research | Not decided | Not yet | No |
 | Strategy | `STRATEGY.md`: the brand's working theory in eight sections: market, message, offer and price, placement, promotion, priority, resourcing and timing. Each line names the decision behind it | Not yet | No |
 | Decisions | `DECISIONS.md`: every decision behind the strategy, grouped by resolution. Never edited, only superseded | Not yet | Yes |
-| Site plan | `SITE.md`. The Writing pack writes which pages exist, each page's job and reader, and where each leads. The Site pack writes each page's address, page type, state and connections, with the site's modules, domain and launch state | Not yet | No |
+| Site plan | `SITE.md`. The Messaging pack (`plan`) writes which pages exist, each page's job and reader, and where each leads. The Site pack writes each page's address, page type, state and connections, with the site's modules, domain and launch state | Not yet | No |
 | Content plan | `CONTENT.md`: the plan of pieces to write: what, for whom, on which topic, in what order. It is the plan, not the pieces | Not yet | No |
 | Playbooks | This skill's part of a playbook, a Knowledge document at `playbook-<kind>`: the points to make and who is speaking. The site's builder writes the rest | Not yet | No |
 
